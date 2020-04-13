@@ -1,23 +1,17 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
-
-	{% include "components/head.njk" %}
+<html lang="sv">
+	<head>
+  <meta charset="utf-8">
+		<link rel="dns-prefetch" href="https://identity.netlify.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SVS</title>
+		<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	</head>
 
 	<body>
-
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
-
 		<main>
 			{{ layoutContent | safe }}
 		</main>
-
-		{% include "components/footer.njk" %}
-
 	</body>
 
 </html>
