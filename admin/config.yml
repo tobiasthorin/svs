@@ -25,13 +25,12 @@ collections:
     files:
       - label: "About SVS"
         name: "about-svs"
-
         file: "index.md"
         fields:
           - {
               label: Layout,
               name: layout,
-              widget: hidden,
+              widget: string,
               default: "layouts/base.njk",
             }
           - { label: Title, name: title, widget: string }
