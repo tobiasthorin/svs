@@ -1,6 +1,6 @@
 ---
 title: Om SVS
-layout: layouts/base.njk
+layout: layouts/home.njk
 eleventyNavigation:
   key: Home
   order: 0
