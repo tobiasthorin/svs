@@ -41,7 +41,7 @@ collections:
             fields:
               - { label: "Key", name: "key", widget: "hidden", default: "home" }
               - { label: "Order", name: "order", widget: "hidden", default: 0 }
-          - { label: Body, name: bady, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
       - label: "About Vidfamne"
         name: "about-vidfamne"
         file: "ship.md"
@@ -59,4 +59,4 @@ collections:
             fields:
               - { label: "Key", name: "key", widget: "hidden", default: "ship" }
               - { label: "Order", name: "order", widget: "hidden", default: 1 }
-          - { label: Body, name: bady, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
