@@ -27,35 +27,11 @@ collections:
         name: "about-svs"
         file: "index.md"
         fields:
-          - {
-              label: Layout,
-              name: layout,
-              widget: string,
-              default: "layouts/base.njk",
-            }
           - { label: Title, name: title, widget: string }
-          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-            name: "eleventyNavigation"
-            widget: "object"
-            fields:
-              - { label: "Key", name: "key", widget: "hidden", default: "home" }
-              - { label: "Order", name: "order", widget: "hidden", default: 0 }
           - { label: Body, name: body, widget: markdown }
       - label: "About Vidfamne"
         name: "about-vidfamne"
         file: "ship.md"
         fields:
-          - {
-              label: Layout,
-              name: layout,
-              widget: hidden,
-              default: "layouts/base.njk",
-            }
           - { label: Title, name: title, widget: string }
-          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-            name: "eleventyNavigation"
-            widget: "object"
-            fields:
-              - { label: "Key", name: "key", widget: "hidden", default: "ship" }
-              - { label: "Order", name: "order", widget: "hidden", default: 1 }
           - { label: Body, name: body, widget: markdown }
