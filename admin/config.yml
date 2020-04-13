@@ -18,29 +18,32 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Our pages e.g. About
-  - name: "pages"
-    label: "Page"
-    folder: "pages"
-    create: false # Change to true to allow editors to create new pages
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-        name: "eleventyNavigation"
-        widget: "object"
-        fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Order", name: "order", widget: "number", default: 0 }
-      - { label: "Body", name: "body", widget: "markdown" }
-  # Simple info texts, included on other pages
+  # Info texts
   - name: "info-texts"
     label: "Info Texts"
-    folder: "_includes/info-texts"
-    create: false # Change to true to allow editors to create new pages
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - label: "About SVS"
+        name: "about-svs"
+        file: "index.njk"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+            name: "eleventyNavigation"
+            widget: "object"
+            fields:
+              - { label: "Key", name: "key", widget: "string" }
+              - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: Body, name: bady, widget: markdown }
+      - label: "About Vidfamne"
+        name: "about-vidfamne"
+        file: "ship.njk"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+            name: "eleventyNavigation"
+            widget: "object"
+            fields:
+              - { label: "Key", name: "key", widget: "string" }
+              - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: Body, name: bady, widget: markdown }

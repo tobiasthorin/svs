@@ -9,6 +9,9 @@
 	</head>
 
 	<body>
+
+	<h1>Sällskapet Vikingatida Skepp</h1>
+
 	<nav>
   {% set navPages = collections.all | eleventyNavigation %}
   <ul>
@@ -22,6 +25,8 @@
 		<main>
 			{{ layoutContent | safe }}
 		</main>
+
+		<script src="/scripts/netlifyIdentity.js" ></script>
 	</body>
 
 </html>
