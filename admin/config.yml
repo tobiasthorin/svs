@@ -25,10 +25,15 @@ collections:
     files:
       - label: "About SVS"
         name: "about-svs"
-        
+
         file: "index.md"
         fields:
-          - {label: Layout, name: layout, widget: hidden, default: "layouts/base.njk"}
+          - {
+              label: Layout,
+              name: layout,
+              widget: hidden,
+              default: "layouts/base.njk",
+            }
           - { label: Title, name: title, widget: string }
           - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
             name: "eleventyNavigation"
@@ -41,7 +46,12 @@ collections:
         name: "about-vidfamne"
         file: "ship.md"
         fields:
-        - {label: Layout, name: layout, widget: hidden, default: "layouts/base.njk"}
+          - {
+              label: Layout,
+              name: layout,
+              widget: hidden,
+              default: "layouts/base.njk",
+            }
           - { label: Title, name: title, widget: string }
           - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
             name: "eleventyNavigation"
