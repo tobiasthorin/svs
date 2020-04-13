@@ -4,3 +4,12 @@ layout: layouts/base.njk
 
 {{ layoutContent | safe }}
 
+<h2>Nyheter</h2>
+{% for newsItem in collections.news %}
+  <li>
+  <a href="{{newsItem.url}}">
+    <h3>{{ newsItem.data.title }}</h3>
+    <p>{{newsItem.data.summary}}</p>
+  </a>
+  </li>
+{% endfor %}
